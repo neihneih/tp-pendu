@@ -8,7 +8,7 @@ from random import randint
 
 def choix_mot():
     #retourne un mot au hasard dans mots.txt
-    fichier = open('mots.txt','r')
+    fichier = open('mots.txt','r+')
     contenu = fichier.readline()
 
     liste_mots = contenu.split(' ')

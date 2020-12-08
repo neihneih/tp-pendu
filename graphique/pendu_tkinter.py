@@ -6,7 +6,7 @@ from tkinter import Tk, Label, Button, Frame, PhotoImage, Canvas, Entry
 
 def choix_mot():
     # Retourne un mot au hasard du fichier mots.txt
-    fichier = open('mots.txt','r')
+    fichier = open('mots.txt','r+')
     contenu = fichier.readline()
     liste_mots = contenu.split(' ')
     n = randint(0,len(liste_mots))
@@ -134,7 +134,7 @@ chance = 8
 # création de la fenêtre principale
 root=Tk()
 root.title('PENDU TKINTER')
-root.geometry('900x450')
+root.geometry('900x1200')
 
 # definition des images
 image1=PhotoImage(master=root, file='bonhomme8.gif')
