@@ -1,3 +1,9 @@
+'''
+Sujet : CS-DEV TP 2 : pendu tkinter
+Auteur : NGUYEN Hien
+Date de creation : 01/12/2020
+'''
+
 from  tkinter import *
 import random
 from random import randint
@@ -134,7 +140,8 @@ chance = 8
 # création de la fenêtre principale
 root=Tk()
 root.title('PENDU TKINTER')
-root.geometry('900x1200')
+root.geometry('302x500')
+root.resizable(False, False)
 
 # definition des images
 image1=PhotoImage(master=root, file='bonhomme8.gif')
@@ -174,15 +181,15 @@ console=Label(root, textvariable=info)
 
 # === mise en page ===
 
-label_cpt.grid(row=7,column=2)
-LabelMotRech.grid(row=2)
-BoutonEntry.grid(row=3)
-BoutonSaisir.grid(row=4)
-BoutonRejouer.grid(row=5)
-BoutonQuitter.grid(row=6)
-Labellettres_fausses.grid(row=7)
-Canevas.grid(row=1,column=2,rowspan=6)
-console.grid(row=8, column=2)
+Canevas.grid(row=1,rowspan=6)
+label_cpt.grid(row=7)
+console.grid(row=8)
+Labellettres_fausses.grid(row=9)
+LabelMotRech.grid(row=10)
+BoutonEntry.grid(row=11)
+BoutonSaisir.grid(row=12)
+BoutonRejouer.grid(row=13)
+BoutonQuitter.grid(row=14)
 
 Rejouer()
 
